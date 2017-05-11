@@ -6,7 +6,7 @@ import os
 import subprocess
 import sys
 
-#import pytest
+import pytest
 
 
 FLAKE8_ARGS = ['algorithms', 'tests']
@@ -52,8 +52,8 @@ if __name__ == '__main__':
             '--cov',
             'algorithms'] + pytest_args
 
-    #if run_tests:
-    #   exit_on_failure(pytest.main(pytest_args))
+    if run_tests:
+       exit_on_failure(pytest.main(pytest_args))
 
-    #if run_flake8:
-    #   exit_on_failure(flake8_main(FLAKE8_ARGS))
+    if run_flake8:
+       exit_on_failure(flake8_main(FLAKE8_ARGS))
