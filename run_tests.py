@@ -6,7 +6,7 @@ import os
 import subprocess
 import sys
 
-import pytest
+#import pytest
 
 
 FLAKE8_ARGS = ['algorithms', 'tests']
