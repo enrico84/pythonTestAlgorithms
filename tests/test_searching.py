@@ -19,6 +19,9 @@ class TestBinarySearch(unittest.TestCase):
     """
 
     def test_binarysearch(self):
+        """
+        Method for tests Binary Search on a small range from 0-9
+        """
         self.seq = range(10)
         rv1 = binary_search.search(self.seq, 0)
         rv2 = binary_search.search(self.seq, 9)
