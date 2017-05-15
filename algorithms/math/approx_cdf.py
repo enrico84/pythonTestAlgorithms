@@ -33,4 +33,4 @@ def cdf(x, iterations=300):
         taylor_exp.append(float(x**i)/product)
     taylor_fact = sum(taylor_exp)
 
-    return (0.5 + (taylor_fact * std_normal_pdf.pdf(x, mean=0, std_dev=1)))
+    return 0.5 + (taylor_fact * std_normal_pdf.pdf(x, mean=0, std_dev=1))

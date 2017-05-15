@@ -20,9 +20,9 @@ def pdf(x, mean=0, std_dev=1):
     :param std_dev: An integer.
     :rtype: The normal distribution
     """
-    PI = 3.141592653589793
-    E = 2.718281828459045
-    term1 = 1.0 / ((2 * PI)**0.5)
-    term2 = E**(-1.0*(x-mean)**2.0 / 2.0*(std_dev**2.0))
+    pi = 3.141592653589793
+    e = 2.718281828459045
+    term1 = 1.0 / ((2 * pi)**0.5)
+    term2 = e**(-1.0*(x-mean)**2.0 / 2.0*(std_dev**2.0))
 
     return term1 * term2

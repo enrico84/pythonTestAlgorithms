@@ -9,6 +9,10 @@
 
 
 class Undirected_Graph:
+    """
+    The Undirected_Graph class represents an undirected graph of vertices
+    which can be any hashable value...
+    """
     def __init__(self):
         self.__adj = {}
         self.__v_count = 0
